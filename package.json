@@ -26,7 +26,7 @@
     "strategy"
   ],
   "homepage": "https://github.com/panva/node-openid-client",
-  "repository": "panva/node-openid-client",
+  "repository": "dextersjab/node-openid-client",
   "funding": {
     "url": "https://github.com/sponsors/panva"
   },
