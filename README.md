@@ -1,3 +1,15 @@
+# Modified version of openid-client
+
+This library is forked from [panva's openid-client](https://github.com/panva/node-openid-client)
+to accommodate the [Open Banking UK (OBIE)'s implementation of the
+OIDC dynamic client registration](https://openbankinguk.github.io/dcr-docs-pub/v3.3/dynamic-client-registration.html).
+
+The primary difference is that this library allows registration payloads to be
+submitted as a JWS. So it's not strictly OIDC-compliant, whereas openid-client is.
+
+I'm not sure at this stage whether OIDF will extend FAPI to allow this or
+whether OBIE will transition to full FAPI compliance.
+
 # openid-client
 
 openid-client is a server side [OpenID][openid-connect] Relying Party (RP, Client) implementation for

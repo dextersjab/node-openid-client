@@ -218,6 +218,12 @@ export interface RegisterOther {
   initialAccessToken?: string;
 }
 
+export interface JwsOptions {
+  signingKey: crypto.KeyObject;
+  keyId: string,
+  algorithm: string,
+}
+
 export interface DeviceAuthorizationParameters {
   client_id?: string;
   scope?: string;
@@ -370,7 +376,7 @@ declare class BaseClient {
     expires_in: number;
     [key: string]: unknown;
   }>;
-  static register(metadata: object, other?: RegisterOther & ClientOptions): Promise<BaseClient>;
+  static register(metadata: object, other?: RegisterOther & ClientOptions, jwsOption?: JwsOptions): Promise<BaseClient>;
   static fromUri(
     registrationClientUri: string,
     registrationAccessToken: string,
