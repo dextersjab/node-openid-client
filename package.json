@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "version": "5.1.10",
+  "version": "5.1.10.2",
   "description": "OpenID Connect Relying Party (RP, Client) implementation for Node.js runtime, supports passportjs",
   "keywords": [
     "auth",
@@ -26,7 +26,7 @@
     "strategy"
   ],
   "homepage": "https://github.com/panva/node-openid-client",
-  "repository": "dextersjab/node-openid-client",
+  "repository": "https://github.com/dextersjab/node-openid-client",
   "funding": {
     "url": "https://github.com/sponsors/panva"
   },
