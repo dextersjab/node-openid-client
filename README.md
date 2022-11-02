@@ -1,5 +1,7 @@
 # Modified version of openid-client
 
+NOT STABLE YET.
+
 This library is forked from [panva's openid-client](https://github.com/panva/node-openid-client)
 to accommodate the [Open Banking UK (OBIE)'s implementation of the
 OIDC dynamic client registration](https://openbankinguk.github.io/dcr-docs-pub/v3.3/dynamic-client-registration.html).
