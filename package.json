@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
-  "version": "5.1.1.0.4",
+  "version": "0.1.1",
   "description": "OpenID Connect Relying Party (RP, Client) implementation for Node.js runtime, supports passportjs",
   "keywords": [
     "auth",
@@ -27,11 +27,8 @@
   ],
   "homepage": "https://github.com/panva/node-openid-client",
   "repository": "https://github.com/dextersjab/node-openid-client",
-  "funding": {
-    "url": "https://github.com/sponsors/panva"
-  },
   "license": "MIT",
-  "author": "Filip Skokan <panva.ip@gmail.com>",
+  "author": "Dexter Awoyemi",
   "exports": {
     "types": "./types/index.d.ts",
     "import": "./lib/index.mjs",

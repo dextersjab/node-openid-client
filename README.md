@@ -102,7 +102,7 @@ specific middlewares. Those can however be built using the exposed API, one such
 Node.js LTS releases Codename Erbium (starting with ^12.19.0) and newer LTS releases are supported.
 
 ```console
-npm install openid-client
+npm install @dextersjab/openid-client
 ```
 
 ## Quick start
