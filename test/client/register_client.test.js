@@ -231,3 +231,19 @@ describe('Client#register', () => {
     });
   });
 });
+
+
+describe('Client#deleteRegistration', () => {
+  afterEach(nock.cleanAll);
+
+  it('returns no content in response to deletion request', async () => {
+    const clientID  = 'identifier';
+    nock('https://op.example.com')
+      .matchHeader('accept', 'application/json')
+      .matchHeader('user-agent', "@dextersjab/openid-client/0.1.1 (https://github.com/panva/node-openid-client)")
+      .delete(`/client/registration/${clientID}`)
+      .reply(204);
+
+    expect(await issuer.Client.deleteRegistration(clientID)).to.eql(undefined);
+  });
+});

@@ -377,6 +377,7 @@ declare class BaseClient {
     [key: string]: unknown;
   }>;
   static register(metadata: object, other?: RegisterOther & ClientOptions, jwsOption?: JwsOptions): Promise<BaseClient>;
+  static deleteRegistration(clientID: string, other?: RegisterOther & ClientOptions, jwsOption?: JwsOptions): Promise<undefined>;
   static fromUri(
     registrationClientUri: string,
     registrationAccessToken: string,

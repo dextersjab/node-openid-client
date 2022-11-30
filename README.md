@@ -1,7 +1,5 @@
 # Modified version of openid-client
 
-NOT STABLE YET.
-
 This library is forked from [panva's openid-client](https://github.com/panva/node-openid-client)
 to accommodate the [Open Banking UK (OBIE)'s implementation of the
 OIDC dynamic client registration](https://openbankinguk.github.io/dcr-docs-pub/v3.3/dynamic-client-registration.html).
@@ -11,6 +9,10 @@ submitted as a JWS. So it's not strictly OIDC-compliant, whereas openid-client i
 
 I'm not sure at this stage whether OIDF will extend FAPI to allow this or
 whether OBIE will transition to full FAPI compliance.
+
+Also, Dynamic Client Registration has been extended to support registration deletion
+(from [RFC 7592](https://datatracker.ietf.org/doc/html/rfc7592)), used for example by
+[Open Banking UK](https://openbankinguk.github.io/dcr-docs-pub/v3.3/dynamic-client-registration.html).
 
 # openid-client
 
