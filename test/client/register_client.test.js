@@ -240,7 +240,6 @@ describe('Client#deleteRegistration', () => {
     const clientID  = 'identifier';
     nock('https://op.example.com')
       .matchHeader('accept', 'application/json')
-      .matchHeader('user-agent', "@dextersjab/openid-client/0.1.1 (https://github.com/panva/node-openid-client)")
       .delete(`/client/registration/${clientID}`)
       .reply(204);
 
